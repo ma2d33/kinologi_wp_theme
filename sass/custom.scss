@@ -1,0 +1,47 @@
+
+
+/* 
+    @package: Kinologi Theme;
+ */
+
+
+ /* colors */
+ $mainBlue:#004b9a;
+ $mainGray:#ededed;
+ $fontBlack:#191919;
+ $fontGray:#757575;
+/* fonts */
+@font-face{
+    font-family: Roboto-R;
+    src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: Roboto-M;
+    src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face{
+    font-family: Oswald-M;
+    src: url(fonts/Oswald/Oswald-Medium.ttf);
+}
+
+
+/* includes */
+@import "sectionOne";
+@import "sectionTwo";
+
+
+
+
+/* bootstrap overwrites */
+.row{
+    margin:0 !important;
+}
+
+.kin-light-gray{
+    background-color: $mainGray;
+}
+.kin-dark-blue{
+    background-color: $mainBlue;
+}
+
+

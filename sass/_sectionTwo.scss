@@ -1,0 +1,62 @@
+
+
+#sec_two_boxrow{
+    height: 446px;
+    position: relative;
+}
+/* FLEX */
+.kin-text-flex-container{
+    position: absolute;
+    z-index: 10;
+    width: 79vw;
+    max-width: 79vw;
+    height: 209px;
+    background-color: #fff;
+    top: 29%;
+    left: 10.3vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+}
+.kin-text-flex-item{
+    height: 100%;
+    width:32%;
+    margin: auto;
+    padding-top: 3vw;
+    padding-left: 2.5vw;
+
+    .textbox-img{
+        display: inline-block;
+        width: 20%;
+        float: left;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: 64% 66%;
+        background-position: 0% 19%;
+    }
+
+    
+    .textbox-text{
+        display: inline-block;
+        float: left;
+        width: 80%;
+        padding-right: 3vw;
+        line-height: normal;
+        h3{
+            font-family: Roboto-M;
+            font-size: 1rem;
+            padding-left: 31px;
+            transform: scaleX(1.09);   
+        }
+        p{
+            font-family: Roboto-R;
+            color: $fontGray;
+            padding-left:20px;
+            padding-top: 2px;
+        }
+    }
+}
