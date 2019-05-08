@@ -1,0 +1,21 @@
+/* 
+@package kinotheme   
+ */
+
+
+.kinologi-admin-section{display: inline-block;}
+.kinologi-general-form,
+.kinologi-preview{
+    display: inline-block;float: left;
+}
+
+.kinologi-preview{width: 280px;background-color: #2D2D2D;padding: 20px;text-align: center;margin-right: 20px}
+.kinologi-firstsection{display: block;text-align: center;}
+h4.kinologi-slogan,
+h3.kinologi-title{font-weight: 100;color: #fff}
+h4.kinologi-slogan{font-size: 13px;margin: 0 0 20px;}
+h3.kinologi-title{font-size: 24px;margin: 0 0 10px;}
+
+
+.big-picture-cont{width: 350px;float: right;padding-right: 60px;}
+#profile_pic_peview{width:100%;}
