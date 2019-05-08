@@ -3,22 +3,9 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <!-- post -->
             <?php 
-                the_title();
-                the_content();
-                $slogan = esc_attr( get_option('slogan'));
-                $defoult ="defoult slogan";
-                if($slogan == null){
-                    $slogan = $defoult;
-                }
-                 echo "<h2>".$slogan."</h2>";
+                require_once get_template_directory() . '/inc/page_sections/kinologi_section_1.php';  
+                require_once get_template_directory() . '/inc/page_sections/kinologi_section_2.php';  
             ?>
-            
-            <?php 
-                $f_GallImg_1 = esc_attr(get_option('f_gall_img_1'));
-                echo '<img src="'.$f_GallImg_1.'"/>';
-             ?>
-
-            <hr>
         <?php endwhile; ?>
         <!-- post navigation -->
         <?php else: ?>

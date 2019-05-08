@@ -26,9 +26,14 @@
 
 
     function kino_escript_enqueue(){
+        
         wp_enqueue_style( 'customstyle', get_template_directory_uri().'/css/custom.css', array(),'1.0.0','all');
+        wp_register_style('bootstrap',get_template_directory_uri().'/css/bootstrap.min.css',array(),'4.3.1','all');
+        wp_enqueue_style('bootstrap');
         // script
         wp_enqueue_script('customscript', get_template_directory_uri().'/js/custom.js', array(), '1.0.0', true);
+        wp_register_script('bottstrap_js',get_template_directory_uri().'/js/bootstrap.min.js',array(),'4.3.1',true);
+        wp_enqueue_script('bootstrap_js');
     }
 
     add_action( 'admin_enqueue_scripts', 'kinologi_admin_enqueue');
